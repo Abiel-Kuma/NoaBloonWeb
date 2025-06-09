@@ -1,5 +1,5 @@
 import React from "react";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, Droplets, Zap, Ruler } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -32,7 +32,7 @@ const KitCard: React.FC<KitCardProps> = ({ kit }) => {
   };
 
   return (
-    <Card className="group hover:shadow-lg transition-all duration-300 border border-gray-200 overflow-hidden">
+    <Card className="group hover:shadow-xl transition-all duration-300 border border-noabloon-light-green-200 overflow-hidden bg-white hover:border-noabloon-deep-green-300">
       <CardHeader className="p-0">
         <div className="aspect-[4/3] overflow-hidden">
           <img
@@ -46,27 +46,55 @@ const KitCard: React.FC<KitCardProps> = ({ kit }) => {
       <CardContent className="p-6">
         <div className="space-y-3">
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+            <h3 className="text-lg font-semibold text-noabloon-deep-green-800 group-hover:text-noabloon-deep-green transition-colors">
               {kit.name}
             </h3>
-            <p className="text-sm text-gray-600 mt-1">Model: {kit.model}</p>
+            <p className="text-sm text-noabloon-grayish-blue-600 mt-1">
+              Model: {kit.model}
+            </p>
           </div>
 
           <div>
-            <p className="text-sm font-medium text-gray-700 mb-2">
-              Components:
+            <p className="text-sm font-medium text-noabloon-grayish-blue-700 mb-2">
+              Includes:
             </p>
             <div className="flex flex-wrap gap-1">
               {kit.components.map((component, index) => (
-                <Badge key={index} variant="secondary" className="text-xs">
+                <Badge
+                  key={index}
+                  className="text-xs bg-noabloon-light-green-100 text-noabloon-deep-green-700 hover:bg-noabloon-light-green-200"
+                >
                   {component}
                 </Badge>
               ))}
             </div>
           </div>
 
+          {kit.specifications && (
+            <div className="pt-2 space-y-1">
+              {kit.specifications.height && (
+                <div className="flex items-center text-xs text-noabloon-grayish-blue-600">
+                  <Ruler className="w-3 h-3 mr-1" />
+                  Height: {kit.specifications.height}
+                </div>
+              )}
+              {kit.specifications.capacity && (
+                <div className="flex items-center text-xs text-noabloon-grayish-blue-600">
+                  <Droplets className="w-3 h-3 mr-1" />
+                  Capacity: {kit.specifications.capacity}
+                </div>
+              )}
+              {kit.specifications.powerConsumption && (
+                <div className="flex items-center text-xs text-noabloon-grayish-blue-600">
+                  <Zap className="w-3 h-3 mr-1" />
+                  Power: {kit.specifications.powerConsumption}
+                </div>
+              )}
+            </div>
+          )}
+
           <div className="flex items-center justify-between pt-2">
-            <span className="text-2xl font-bold text-gray-900">
+            <span className="text-2xl font-bold text-noabloon-deep-green-800">
               ${kit.price.toFixed(2)}
             </span>
           </div>
@@ -76,7 +104,7 @@ const KitCard: React.FC<KitCardProps> = ({ kit }) => {
       <CardFooter className="p-6 pt-0">
         <Button
           onClick={handleAddToCart}
-          className="w-full group-hover:bg-blue-700 transition-colors"
+          className="w-full bg-noabloon-deep-green hover:bg-noabloon-deep-green-700 text-white group-hover:bg-noabloon-deep-green-600 transition-colors"
           size="lg"
         >
           <ShoppingCart className="w-4 h-4 mr-2" />

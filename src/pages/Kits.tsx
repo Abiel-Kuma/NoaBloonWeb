@@ -1,76 +1,97 @@
 import React from "react";
 import KitCard from "@/components/KitCard";
 import { Kit } from "@/types/product";
+import { Leaf, Droplets, Sun, TrendingUp } from "lucide-react";
 
 const sampleKits: Kit[] = [
   {
     id: "kit-1",
-    name: "NoaBloon Starter Kit",
-    model: "NB-SK-001",
+    name: "Urban Harvest Starter",
+    model: "UH-VS-001",
     components: [
-      "Base Module",
-      "Sensor Pack",
-      "Power Supply",
-      "Cables",
-      "Manual",
+      "6-Tower System",
+      "LED Grow Lights",
+      "Hydroponic Pump",
+      "Nutrient Solution",
+      "Growing Medium",
+      "Setup Guide",
     ],
-    price: 299.99,
+    price: 899.99,
     image:
-      "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=500&h=400&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&h=400&fit=crop&crop=center",
+    specifications: {
+      height: "6 feet",
+      capacity: "36 plants",
+      powerConsumption: "120W",
+      waterCapacity: "20 gallons",
+    },
   },
   {
     id: "kit-2",
-    name: "NoaBloon Pro Kit",
-    model: "NB-PK-002",
+    name: "Commercial Green Tower",
+    model: "CGT-VF-002",
     components: [
-      "Advanced Base",
-      "Multi-Sensor Array",
-      "High-Power Supply",
-      "Premium Cables",
-      "Extended Manual",
-      "Carrying Case",
+      "12-Tower System",
+      "Advanced LED Array",
+      "Automated Irrigation",
+      "Climate Sensors",
+      "Nutrient Reservoir",
+      "Mobile App Control",
+      "Professional Setup",
     ],
-    price: 599.99,
+    price: 2399.99,
     image:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=400&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=500&h=400&fit=crop&crop=center",
+    specifications: {
+      height: "8 feet",
+      capacity: "144 plants",
+      powerConsumption: "300W",
+      waterCapacity: "50 gallons",
+    },
   },
   {
     id: "kit-3",
-    name: "NoaBloon Developer Kit",
-    model: "NB-DK-003",
+    name: "Smart Home Garden",
+    model: "SHG-VF-003",
     components: [
-      "Developer Board",
-      "Breadboard",
-      "Component Library",
-      "GPIO Extender",
-      "Development Manual",
-      "SDK Access",
+      "Compact 4-Tower",
+      "Smart LED Lights",
+      "App-Controlled System",
+      "Organic Nutrients",
+      "Seed Starter Kit",
+      "Quick Start Guide",
     ],
-    price: 449.99,
+    price: 649.99,
     image:
-      "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=500&h=400&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1574263867128-da37dd8c1e01?w=500&h=400&fit=crop&crop=center",
+    specifications: {
+      height: "4 feet",
+      capacity: "24 plants",
+      powerConsumption: "80W",
+      waterCapacity: "15 gallons",
+    },
   },
 ];
 
 const Kits = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-noabloon-light-green-50 to-noabloon-grayish-blue-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+      <section className="bg-gradient-to-r from-noabloon-deep-green to-noabloon-grayish-blue text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              NoaBloon Kits
+              Vertical Farming Systems
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Discover our complete collection of innovative technology kits
-              designed to empower your projects
+              Grow fresh, organic produce year-round with our innovative
+              vertical farming solutions designed for urban spaces
             </p>
             <div className="flex justify-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-md">
                 <p className="text-lg">
-                  Professional-grade components for makers, developers, and
-                  innovators
+                  Sustainable agriculture for the future, bringing farms to the
+                  city
                 </p>
               </div>
             </div>
@@ -82,12 +103,12 @@ const Kits = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Our Featured Kits
+            <h2 className="text-3xl font-bold text-noabloon-deep-green-800 mb-4">
+              Our Vertical Farming Systems
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Each kit comes with carefully selected components, detailed
-              documentation, and everything you need to get started
+            <p className="text-lg text-noabloon-grayish-blue-700 max-w-2xl mx-auto">
+              From compact home gardens to commercial-scale operations, find the
+              perfect vertical farming solution for your space and needs
             </p>
           </div>
 
@@ -99,87 +120,104 @@ const Kits = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Benefits Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Choose NoaBloon Kits?
+            <h2 className="text-3xl font-bold text-noabloon-deep-green-800 mb-4">
+              Why Choose Vertical Farming?
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-blue-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+              <div className="w-16 h-16 bg-noabloon-light-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Droplets className="w-8 h-8 text-noabloon-deep-green" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Quality Components
+              <h3 className="text-xl font-semibold text-noabloon-deep-green-800 mb-2">
+                95% Less Water
               </h3>
-              <p className="text-gray-600">
-                Premium quality components tested for reliability and
-                performance
+              <p className="text-noabloon-grayish-blue-600">
+                Advanced hydroponic systems use water efficiently with precise
+                recycling
               </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-purple-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                  />
-                </svg>
+              <div className="w-16 h-16 bg-noabloon-light-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="w-8 h-8 text-noabloon-deep-green" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Complete Documentation
+              <h3 className="text-xl font-semibold text-noabloon-deep-green-800 mb-2">
+                10x More Yield
               </h3>
-              <p className="text-gray-600">
-                Comprehensive guides and tutorials to help you succeed
+              <p className="text-noabloon-grayish-blue-600">
+                Maximize production in minimal space with vertical growing
+                technology
               </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-green-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 3v6m0 6v6"
-                  />
-                </svg>
+              <div className="w-16 h-16 bg-noabloon-light-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Sun className="w-8 h-8 text-noabloon-deep-green" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Expert Support
+              <h3 className="text-xl font-semibold text-noabloon-deep-green-800 mb-2">
+                Year-Round Growing
               </h3>
-              <p className="text-gray-600">
-                Get help from our team of experienced engineers and developers
+              <p className="text-noabloon-grayish-blue-600">
+                Climate-controlled environments enable continuous harvests
               </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-noabloon-light-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Leaf className="w-8 h-8 text-noabloon-deep-green" />
+              </div>
+              <h3 className="text-xl font-semibold text-noabloon-deep-green-800 mb-2">
+                Zero Pesticides
+              </h3>
+              <p className="text-noabloon-grayish-blue-600">
+                Controlled environment eliminates the need for harmful chemicals
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-gradient-to-r from-noabloon-light-green-100 to-noabloon-grayish-blue-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-noabloon-deep-green-800 mb-4">
+              Growing the Future
+            </h2>
+            <p className="text-lg text-noabloon-grayish-blue-700">
+              Join the vertical farming revolution and help feed the world
+              sustainably
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <div className="text-4xl font-bold text-noabloon-deep-green mb-2">
+                500+
+              </div>
+              <div className="text-noabloon-grayish-blue-700">
+                Farms Installed
+              </div>
+            </div>
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <div className="text-4xl font-bold text-noabloon-deep-green mb-2">
+                2M+
+              </div>
+              <div className="text-noabloon-grayish-blue-700">Plants Grown</div>
+            </div>
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <div className="text-4xl font-bold text-noabloon-deep-green mb-2">
+                80%
+              </div>
+              <div className="text-noabloon-grayish-blue-700">
+                Space Savings
+              </div>
             </div>
           </div>
         </div>

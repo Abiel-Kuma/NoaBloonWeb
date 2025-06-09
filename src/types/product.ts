@@ -5,6 +5,13 @@ export interface Kit {
   components: string[];
   price: number;
   image: string;
+  description?: string;
+  specifications?: {
+    height?: string;
+    capacity?: string;
+    powerConsumption?: string;
+    waterCapacity?: string;
+  };
 }
 
 export interface Accessory {
@@ -12,6 +19,8 @@ export interface Accessory {
   name: string;
   price: number;
   image: string;
+  description?: string;
+  category?: string;
 }
 
 export interface CartItem {

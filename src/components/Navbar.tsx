@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ShoppingCart, User, Menu, X } from "lucide-react";
+import { ShoppingCart, User, Menu, X, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -18,7 +18,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: "Kits", path: "/" },
+    { name: "Vertical Farms", path: "/" },
     { name: "Accessories", path: "/accessories" },
     { name: "About Us", path: "/about" },
   ];
@@ -28,16 +28,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md border-b border-gray-200 sticky top-0 z-50">
+    <nav className="bg-white shadow-md border-b border-noabloon-light-green-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">N</span>
+              <div className="w-10 h-10 bg-gradient-to-r from-noabloon-deep-green to-noabloon-light-green rounded-lg flex items-center justify-center">
+                <Leaf className="text-white h-6 w-6" />
               </div>
-              <span className="ml-2 text-xl font-bold text-gray-900">
+              <span className="ml-2 text-xl font-bold text-noabloon-deep-green-800">
                 NoaBloon
               </span>
             </Link>
@@ -53,8 +53,8 @@ const Navbar = () => {
                   className={cn(
                     "px-3 py-2 text-sm font-medium rounded-md transition-colors duration-200",
                     isActivePath(item.path)
-                      ? "text-blue-600 bg-blue-50"
-                      : "text-gray-700 hover:text-blue-600 hover:bg-gray-50",
+                      ? "text-noabloon-deep-green bg-noabloon-light-green-50"
+                      : "text-noabloon-grayish-blue-700 hover:text-noabloon-deep-green hover:bg-noabloon-light-green-50",
                   )}
                 >
                   {item.name}
@@ -66,13 +66,14 @@ const Navbar = () => {
           {/* Desktop Right Side */}
           <div className="hidden md:flex items-center space-x-4">
             {/* Shopping Cart */}
-            <Button variant="ghost" size="sm" className="relative">
-              <ShoppingCart className="h-5 w-5" />
+            <Button
+              variant="ghost"
+              size="sm"
+              className="relative hover:bg-noabloon-light-green-50"
+            >
+              <ShoppingCart className="h-5 w-5 text-noabloon-grayish-blue-700" />
               {cartState.totalItems > 0 && (
-                <Badge
-                  variant="destructive"
-                  className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs"
-                >
+                <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs bg-noabloon-deep-green text-white">
                   {cartState.totalItems}
                 </Badge>
               )}
@@ -81,7 +82,11 @@ const Navbar = () => {
             {/* User Menu */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="sm">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-noabloon-grayish-blue-300 text-noabloon-grayish-blue-700 hover:bg-noabloon-light-green-50"
+                >
                   <User className="h-4 w-4 mr-2" />
                   Account
                 </Button>
@@ -99,11 +104,12 @@ const Navbar = () => {
               variant="ghost"
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="hover:bg-noabloon-light-green-50"
             >
               {isMobileMenuOpen ? (
-                <X className="h-6 w-6" />
+                <X className="h-6 w-6 text-noabloon-grayish-blue-700" />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className="h-6 w-6 text-noabloon-grayish-blue-700" />
               )}
             </Button>
           </div>
@@ -112,7 +118,7 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 border-t border-gray-200">
+            <div className="px-2 pt-2 pb-3 space-y-1 border-t border-noabloon-light-green-200">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
@@ -120,8 +126,8 @@ const Navbar = () => {
                   className={cn(
                     "block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200",
                     isActivePath(item.path)
-                      ? "text-blue-600 bg-blue-50"
-                      : "text-gray-700 hover:text-blue-600 hover:bg-gray-50",
+                      ? "text-noabloon-deep-green bg-noabloon-light-green-50"
+                      : "text-noabloon-grayish-blue-700 hover:text-noabloon-deep-green hover:bg-noabloon-light-green-50",
                   )}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -129,26 +135,36 @@ const Navbar = () => {
                 </Link>
               ))}
 
-              <div className="pt-4 pb-2 border-t border-gray-200 mt-4">
+              <div className="pt-4 pb-2 border-t border-noabloon-light-green-200 mt-4">
                 <div className="flex items-center justify-between px-3">
-                  <Button variant="ghost" size="sm" className="relative">
-                    <ShoppingCart className="h-5 w-5 mr-2" />
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="relative hover:bg-noabloon-light-green-50"
+                  >
+                    <ShoppingCart className="h-5 w-5 mr-2 text-noabloon-grayish-blue-700" />
                     Cart
                     {cartState.totalItems > 0 && (
-                      <Badge
-                        variant="destructive"
-                        className="ml-2 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs"
-                      >
+                      <Badge className="ml-2 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs bg-noabloon-deep-green text-white">
                         {cartState.totalItems}
                       </Badge>
                     )}
                   </Button>
 
                   <div className="flex space-x-2">
-                    <Button variant="outline" size="sm">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="border-noabloon-grayish-blue-300 text-noabloon-grayish-blue-700"
+                    >
                       Login
                     </Button>
-                    <Button size="sm">Register</Button>
+                    <Button
+                      size="sm"
+                      className="bg-noabloon-deep-green hover:bg-noabloon-deep-green-700 text-white"
+                    >
+                      Register
+                    </Button>
                   </div>
                 </div>
               </div>
