@@ -34,13 +34,7 @@ const KitCard: React.FC<KitCardProps> = ({ kit }) => {
   return (
     <Card className="group hover:shadow-xl transition-all duration-300 border border-noabloon-light-green-200 overflow-hidden bg-white hover:border-noabloon-deep-green-300">
       <CardHeader className="p-0">
-        <div className="aspect-[4/3] overflow-hidden">
-          <img
-            src={kit.image}
-            alt={kit.name}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-          />
-        </div>
+        <div className="aspect-[4/3] overflow-hidden"></div>
       </CardHeader>
 
       <CardContent className="p-6">
@@ -50,13 +44,13 @@ const KitCard: React.FC<KitCardProps> = ({ kit }) => {
               {kit.name}
             </h3>
             <p className="text-sm text-noabloon-grayish-blue-600 mt-1">
-              Model: {kit.model}
+              Modelo: {kit.model}
             </p>
           </div>
 
           <div>
             <p className="text-sm font-medium text-noabloon-grayish-blue-700 mb-2">
-              Includes:
+              Incluye:
             </p>
             <div className="flex flex-wrap gap-1">
               {kit.components.map((component, index) => (
@@ -75,19 +69,19 @@ const KitCard: React.FC<KitCardProps> = ({ kit }) => {
               {kit.specifications.height && (
                 <div className="flex items-center text-xs text-noabloon-grayish-blue-600">
                   <Ruler className="w-3 h-3 mr-1" />
-                  Height: {kit.specifications.height}
+                  Altura: {kit.specifications.height}
                 </div>
               )}
               {kit.specifications.capacity && (
                 <div className="flex items-center text-xs text-noabloon-grayish-blue-600">
                   <Droplets className="w-3 h-3 mr-1" />
-                  Capacity: {kit.specifications.capacity}
+                  Capacidad: {kit.specifications.capacity}
                 </div>
               )}
               {kit.specifications.powerConsumption && (
                 <div className="flex items-center text-xs text-noabloon-grayish-blue-600">
                   <Zap className="w-3 h-3 mr-1" />
-                  Power: {kit.specifications.powerConsumption}
+                  Potencia: {kit.specifications.powerConsumption}
                 </div>
               )}
             </div>
@@ -108,7 +102,7 @@ const KitCard: React.FC<KitCardProps> = ({ kit }) => {
           size="lg"
         >
           <ShoppingCart className="w-4 h-4 mr-2" />
-          Add to Cart
+          Agregar al Carrito
         </Button>
       </CardFooter>
     </Card>

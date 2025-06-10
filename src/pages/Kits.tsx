@@ -6,69 +6,69 @@ import { Leaf, Droplets, Sun, TrendingUp } from "lucide-react";
 const sampleKits: Kit[] = [
   {
     id: "kit-1",
-    name: "Urban Harvest Starter",
+    name: "Kit de Inicio",
     model: "UH-VS-001",
     components: [
-      "6-Tower System",
-      "LED Grow Lights",
-      "Hydroponic Pump",
-      "Nutrient Solution",
-      "Growing Medium",
-      "Setup Guide",
+      "Sistema de 6 Torres",
+      "Luces LED de Crecimiento",
+      "Bomba Hidropónica",
+      "Solución Nutritiva",
+      "Medio de Cultivo",
+      "Guía de Instalación",
     ],
-    price: 899.99,
+    price: 49.99,
     image:
       "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&h=400&fit=crop&crop=center",
     specifications: {
-      height: "6 feet",
-      capacity: "36 plants",
+      height: "1.8 metros",
+      capacity: "36 plantas",
       powerConsumption: "120W",
-      waterCapacity: "20 gallons",
+      waterCapacity: "75 litros",
     },
   },
   {
     id: "kit-2",
-    name: "Commercial Green Tower",
+    name: "Kit Profesional",
     model: "CGT-VF-002",
     components: [
-      "12-Tower System",
-      "Advanced LED Array",
-      "Automated Irrigation",
-      "Climate Sensors",
-      "Nutrient Reservoir",
-      "Mobile App Control",
-      "Professional Setup",
+      "Sistema de 12 Torres",
+      "Array LED Avanzado",
+      "Riego Automatizado",
+      "Sensores de Clima",
+      "Reservorio de Nutrientes",
+      "Control por App Móvil",
+      "Instalación Profesional",
     ],
-    price: 2399.99,
+    price: 149.99,
     image:
       "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=500&h=400&fit=crop&crop=center",
     specifications: {
-      height: "8 feet",
-      capacity: "144 plants",
+      height: "2.4 metros",
+      capacity: "144 plantas",
       powerConsumption: "300W",
-      waterCapacity: "50 gallons",
+      waterCapacity: "190 litros",
     },
   },
   {
     id: "kit-3",
-    name: "Smart Home Garden",
+    name: "Jardín Inteligente para Hogar",
     model: "SHG-VF-003",
     components: [
-      "Compact 4-Tower",
-      "Smart LED Lights",
-      "App-Controlled System",
-      "Organic Nutrients",
-      "Seed Starter Kit",
-      "Quick Start Guide",
+      "4 Torres Compactas",
+      "Luces LED Inteligentes",
+      "Sistema Controlado por App",
+      "Nutrientes Orgánicos",
+      "Kit de Semillas",
+      "Guía de Inicio Rápido",
     ],
     price: 649.99,
     image:
       "https://images.unsplash.com/photo-1574263867128-da37dd8c1e01?w=500&h=400&fit=crop&crop=center",
     specifications: {
-      height: "4 feet",
-      capacity: "24 plants",
+      height: "1.2 metros",
+      capacity: "24 plantas",
       powerConsumption: "80W",
-      waterCapacity: "15 gallons",
+      waterCapacity: "57 litros",
     },
   },
 ];
@@ -76,22 +76,23 @@ const sampleKits: Kit[] = [
 const Kits = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-noabloon-light-green-50 to-noabloon-grayish-blue-50">
-      {/* Hero Section */}
+      {/* Sección Hero */}
       <section className="bg-gradient-to-r from-noabloon-deep-green to-noabloon-grayish-blue text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Vertical Farming Systems
+              Sistemas de Agricultura Vertical
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Grow fresh, organic produce year-round with our innovative
-              vertical farming solutions designed for urban spaces
+              Cultiva productos frescos y orgánicos todo el año con nuestras
+              innovadoras soluciones de agricultura vertical diseñadas para
+              espacios urbanos
             </p>
             <div className="flex justify-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-md">
                 <p className="text-lg">
-                  Sustainable agriculture for the future, bringing farms to the
-                  city
+                  Agricultura sostenible para el futuro, llevando las granjas a
+                  la ciudad
                 </p>
               </div>
             </div>
@@ -99,16 +100,17 @@ const Kits = () => {
         </div>
       </section>
 
-      {/* Kits Grid */}
+      {/* Cuadrícula de Kits */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-noabloon-deep-green-800 mb-4">
-              Our Vertical Farming Systems
+              Nuestros Sistemas de Agricultura Vertical
             </h2>
             <p className="text-lg text-noabloon-grayish-blue-700 max-w-2xl mx-auto">
-              From compact home gardens to commercial-scale operations, find the
-              perfect vertical farming solution for your space and needs
+              Desde jardines compactos para el hogar hasta operaciones a escala
+              comercial, encuentra la solución perfecta de agricultura vertical
+              para tu espacio y necesidades
             </p>
           </div>
 
@@ -120,12 +122,12 @@ const Kits = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Sección de Beneficios */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-noabloon-deep-green-800 mb-4">
-              Why Choose Vertical Farming?
+              ¿Por qué Elegir la Agricultura Vertical?
             </h2>
           </div>
 
@@ -135,11 +137,11 @@ const Kits = () => {
                 <Droplets className="w-8 h-8 text-noabloon-deep-green" />
               </div>
               <h3 className="text-xl font-semibold text-noabloon-deep-green-800 mb-2">
-                95% Less Water
+                95% Menos Agua
               </h3>
               <p className="text-noabloon-grayish-blue-600">
-                Advanced hydroponic systems use water efficiently with precise
-                recycling
+                Los sistemas hidropónicos avanzados usan agua de manera
+                eficiente con reciclaje preciso
               </p>
             </div>
 
@@ -148,11 +150,11 @@ const Kits = () => {
                 <TrendingUp className="w-8 h-8 text-noabloon-deep-green" />
               </div>
               <h3 className="text-xl font-semibold text-noabloon-deep-green-800 mb-2">
-                10x More Yield
+                10x Más Rendimiento
               </h3>
               <p className="text-noabloon-grayish-blue-600">
-                Maximize production in minimal space with vertical growing
-                technology
+                Maximiza la producción en espacio mínimo con tecnología de
+                cultivo vertical
               </p>
             </div>
 
@@ -161,10 +163,10 @@ const Kits = () => {
                 <Sun className="w-8 h-8 text-noabloon-deep-green" />
               </div>
               <h3 className="text-xl font-semibold text-noabloon-deep-green-800 mb-2">
-                Year-Round Growing
+                Cultivo Todo el Año
               </h3>
               <p className="text-noabloon-grayish-blue-600">
-                Climate-controlled environments enable continuous harvests
+                Los ambientes controlados por clima permiten cosechas continuas
               </p>
             </div>
 
@@ -173,26 +175,26 @@ const Kits = () => {
                 <Leaf className="w-8 h-8 text-noabloon-deep-green" />
               </div>
               <h3 className="text-xl font-semibold text-noabloon-deep-green-800 mb-2">
-                Zero Pesticides
+                Cero Pesticidas
               </h3>
               <p className="text-noabloon-grayish-blue-600">
-                Controlled environment eliminates the need for harmful chemicals
+                El ambiente controlado elimina la necesidad de químicos dañinos
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Sección de Estadísticas */}
       <section className="py-16 bg-gradient-to-r from-noabloon-light-green-100 to-noabloon-grayish-blue-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-noabloon-deep-green-800 mb-4">
-              Growing the Future
+              Cultivando el Futuro
             </h2>
             <p className="text-lg text-noabloon-grayish-blue-700">
-              Join the vertical farming revolution and help feed the world
-              sustainably
+              Únete a la revolución de la agricultura vertical y ayuda a
+              alimentar al mundo de manera sostenible
             </p>
           </div>
 
@@ -202,21 +204,23 @@ const Kits = () => {
                 500+
               </div>
               <div className="text-noabloon-grayish-blue-700">
-                Farms Installed
+                Granjas Instaladas
               </div>
             </div>
             <div className="bg-white rounded-lg p-8 shadow-lg">
               <div className="text-4xl font-bold text-noabloon-deep-green mb-2">
                 2M+
               </div>
-              <div className="text-noabloon-grayish-blue-700">Plants Grown</div>
+              <div className="text-noabloon-grayish-blue-700">
+                Plantas Cultivadas
+              </div>
             </div>
             <div className="bg-white rounded-lg p-8 shadow-lg">
               <div className="text-4xl font-bold text-noabloon-deep-green mb-2">
                 80%
               </div>
               <div className="text-noabloon-grayish-blue-700">
-                Space Savings
+                Ahorro de Espacio
               </div>
             </div>
           </div>

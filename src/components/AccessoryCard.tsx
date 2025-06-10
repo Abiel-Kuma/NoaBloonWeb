@@ -69,7 +69,7 @@ const AccessoryCard: React.FC<AccessoryCardProps> = ({ accessory }) => {
           size="lg"
         >
           <ShoppingCart className="w-4 h-4 mr-2" />
-          Add to Cart
+          Agregar al Carrito
         </Button>
       </CardFooter>
     </Card>

@@ -18,9 +18,9 @@ const Navbar = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: "Vertical Farms", path: "/" },
-    { name: "Accessories", path: "/accessories" },
-    { name: "About Us", path: "/about" },
+    { name: "Granjas Verticales", path: "/" },
+    { name: "Accesorios", path: "/accessories" },
+    { name: "Acerca de Nosotros", path: "/about" },
   ];
 
   const isActivePath = (path: string) => {
@@ -92,8 +92,8 @@ const Navbar = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
-                <DropdownMenuItem>Login</DropdownMenuItem>
-                <DropdownMenuItem>Register</DropdownMenuItem>
+                <DropdownMenuItem>Iniciar Sesión</DropdownMenuItem>
+                <DropdownMenuItem>Registrarse</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
@@ -157,13 +157,13 @@ const Navbar = () => {
                       size="sm"
                       className="border-noabloon-grayish-blue-300 text-noabloon-grayish-blue-700"
                     >
-                      Login
+                      Iniciar Sesión
                     </Button>
                     <Button
                       size="sm"
                       className="bg-noabloon-deep-green hover:bg-noabloon-deep-green-700 text-white"
                     >
-                      Register
+                      Registrarse
                     </Button>
                   </div>
                 </div>
