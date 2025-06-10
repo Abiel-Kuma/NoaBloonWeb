@@ -3,36 +3,36 @@ import { Leaf, Users, Globe, TrendingUp, Heart } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Alexandra Chen",
-    role: "CEO & Agricultural Engineer",
+    name: "Abiel Sánchez",
+    role: "CEO",
     image:
-      "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=300&h=300&fit=crop&crop=face",
+      "https://cdn.builder.io/api/v1/image/assets%2F01960d167ecc4066a5dd27bebba984c8%2Ff125aa24fc054e9283dab859f81cc415",
     bio: "15+ years in sustainable agriculture and vertical farming innovation",
   },
   {
-    name: "Marcus Rodriguez",
-    role: "CTO & Systems Designer",
+    name: "Erick Méndez",
+    role: "Systems Designer",
     image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face",
+      "https://cdn.builder.io/api/v1/image/assets%2F01960d167ecc4066a5dd27bebba984c8%2Fbbcadb0c3ff74c82b98de8dafd221898",
     bio: "Expert in hydroponic systems and automated growing technology",
   },
   {
-    name: "Sarah Johnson",
+    name: "Hugo Rodríguez",
     role: "Head of Research",
     image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face",
+      "https://cdn.builder.io/api/v1/image/assets%2F01960d167ecc4066a5dd27bebba984c8%2F85ff0057e8f243d99054a46b3ba3d7ae",
     bio: "Plant scientist specializing in urban agriculture and crop optimization",
   },
   {
-    name: "David Kim",
-    role: "Operations Director",
+    name: "Ricardo Arias",
+    role: "Critico del team",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face",
+      "https://cdn.builder.io/api/v1/image/assets%2F01960d167ecc4066a5dd27bebba984c8%2F3fdf14d03d3a45efbb9acb1dcfe4659c",
     bio: "Supply chain expert ensuring sustainable and efficient operations",
   },
   {
-    name: "Emily Davis",
-    role: "Customer Success Lead",
+    name: "César Flores",
+    role: "La maquina de chambear",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
     bio: "Passionate about helping customers achieve their growing goals",
@@ -65,26 +65,18 @@ const AboutUs = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-noabloon-deep-green-800 mb-8">
-              Who We Are
+              Quienes somos
             </h2>
             <p className="text-lg text-noabloon-grayish-blue-700 leading-relaxed mb-8">
-              NoaBloon is a pioneering vertical farming company dedicated to
-              transforming how we grow and consume fresh produce. Founded in
-              2019, we develop state-of-the-art vertical farming systems that
-              enable sustainable, year-round food production in urban
-              environments. Our innovative technology combines advanced
-              hydroponics, LED lighting, and automated climate control to create
-              optimal growing conditions while using 95% less water and
-              producing 10 times more yield per square foot than traditional
-              farming.
-            </p>
-            <p className="text-lg text-noabloon-grayish-blue-700 leading-relaxed">
-              From small home gardens to large commercial installations, we're
-              committed to making fresh, pesticide-free produce accessible to
-              everyone while reducing the environmental impact of agriculture.
-              Our systems are designed for simplicity and efficiency, ensuring
-              that whether you're a home gardener or a commercial grower, you
-              have the tools needed to cultivate success.
+              NoaBloom es una empresa de agricultura vertical que busca
+              revolucionar la producción de alimentos en áreas urbanas mediante
+              sistemas de cultivo en ambientes controlados y estructuras
+              verticales. Este enfoque permite optimizar el uso del espacio,
+              reducir el consumo de agua y eliminar el uso de pesticidas,
+              ofreciendo productos más frescos y saludables. A través del
+              comercio electrónico, buscamos acercar directamente estos
+              productos al consumidor, garantizando calidad, trazabilidad y
+              conveniencia.
             </p>
           </div>
         </div>
@@ -100,15 +92,12 @@ const AboutUs = () => {
                 <TrendingUp className="w-8 h-8 text-noabloon-deep-green" />
               </div>
               <h3 className="text-2xl font-bold text-noabloon-deep-green-800 mb-4">
-                Our Mission
+                Misión
               </h3>
               <p className="text-noabloon-grayish-blue-700 leading-relaxed">
-                To revolutionize food production by making vertical farming
-                accessible, sustainable, and profitable for communities
-                worldwide. We strive to provide innovative solutions that enable
-                local food production, reduce environmental impact, and create
-                food security in urban areas where traditional agriculture isn't
-                viable.
+                Ofrecer productos agrícolas frescos, sostenibles y de alta
+                calidad, mediante un modelo de agricultura vertical, promoviendo
+                el bienestar de las personas y el cuidado del medio ambiente.
               </p>
             </div>
 
@@ -118,15 +107,13 @@ const AboutUs = () => {
                 <Globe className="w-8 h-8 text-noabloon-light-green-600" />
               </div>
               <h3 className="text-2xl font-bold text-noabloon-deep-green-800 mb-4">
-                Our Vision
+                Visión
               </h3>
               <p className="text-noabloon-grayish-blue-700 leading-relaxed">
-                To create a world where fresh, nutritious food is grown locally
-                in every community, reducing food miles, eliminating pesticides,
-                and conserving water resources. We envision vertical farms in
-                every city, school, and home, creating a sustainable food system
-                that can feed the growing global population while protecting our
-                planet.
+                Ser líderes en producción agrícola vertical en la región,
+                integrando tecnología, sostenibilidad y accesibilidad para
+                transformar la forma en que se consume y distribuye la
+                agricultura urbana.
               </p>
             </div>
           </div>
