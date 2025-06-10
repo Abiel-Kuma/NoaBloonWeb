@@ -9,8 +9,7 @@ const sampleKits: Kit[] = [
     name: "Kit de Inicio",
     model: "UH-VS-001",
     components: [
-      "Sistema de 6 Torres",
-      "Luces LED de Crecimiento",
+      "Sistema de una torre pequeña",
       "Bomba Hidropónica",
       "Solución Nutritiva",
       "Medio de Cultivo",
@@ -28,15 +27,13 @@ const sampleKits: Kit[] = [
   },
   {
     id: "kit-2",
-    name: "Kit Profesional",
+    name: "Kit Basico",
     model: "CGT-VF-002",
     components: [
-      "Sistema de 12 Torres",
+      "Sistema de 1 Torres",
       "Array LED Avanzado",
       "Riego Automatizado",
-      "Sensores de Clima",
       "Reservorio de Nutrientes",
-      "Control por App Móvil",
       "Instalación Profesional",
     ],
     price: 149.99,
@@ -51,17 +48,16 @@ const sampleKits: Kit[] = [
   },
   {
     id: "kit-3",
-    name: "Jardín Inteligente para Hogar",
+    name: "Kit Pro",
     model: "SHG-VF-003",
     components: [
       "4 Torres Compactas",
       "Luces LED Inteligentes",
-      "Sistema Controlado por App",
       "Nutrientes Orgánicos",
       "Kit de Semillas",
       "Guía de Inicio Rápido",
     ],
-    price: 649.99,
+    price: 249.99,
     image:
       "https://images.unsplash.com/photo-1574263867128-da37dd8c1e01?w=500&h=400&fit=crop&crop=center",
     specifications: {
@@ -201,7 +197,7 @@ const Kits = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="bg-white rounded-lg p-8 shadow-lg">
               <div className="text-4xl font-bold text-noabloon-deep-green mb-2">
-                500+
+                0+
               </div>
               <div className="text-noabloon-grayish-blue-700">
                 Granjas Instaladas
@@ -209,7 +205,7 @@ const Kits = () => {
             </div>
             <div className="bg-white rounded-lg p-8 shadow-lg">
               <div className="text-4xl font-bold text-noabloon-deep-green mb-2">
-                2M+
+                0M+
               </div>
               <div className="text-noabloon-grayish-blue-700">
                 Plantas Cultivadas
