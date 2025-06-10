@@ -34,7 +34,7 @@ const teamMembers = [
     name: "César Flores",
     role: "La máquina de chambear",
     image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
+      "https://cdn.builder.io/api/v1/image/assets%2F01960d167ecc4066a5dd27bebba984c8%2F425610a58d5c4e2ba2d04841acc2797b",
     bio: "Apasionado por ayudar a los clientes a alcanzar sus objetivos de cultivo",
   },
 ];
@@ -230,7 +230,7 @@ const AboutUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="bg-gradient-to-br from-noabloon-light-green-100 to-noabloon-light-green-200 rounded-lg p-8">
               <div className="text-4xl font-bold text-noabloon-deep-green-800 mb-2">
-                1,200+
+                0+
               </div>
               <div className="text-noabloon-grayish-blue-700">
                 Granjas Instaladas
@@ -238,7 +238,7 @@ const AboutUs = () => {
             </div>
             <div className="bg-gradient-to-br from-noabloon-grayish-blue-100 to-noabloon-grayish-blue-200 rounded-lg p-8">
               <div className="text-4xl font-bold text-noabloon-deep-green-800 mb-2">
-                5M+
+                0M+
               </div>
               <div className="text-noabloon-grayish-blue-700">
                 Plantas Cultivadas
@@ -246,7 +246,7 @@ const AboutUs = () => {
             </div>
             <div className="bg-gradient-to-br from-noabloon-deep-green-100 to-noabloon-deep-green-200 rounded-lg p-8">
               <div className="text-4xl font-bold text-noabloon-deep-green-800 mb-2">
-                2.5M
+                0M
               </div>
               <div className="text-noabloon-grayish-blue-700">
                 Galones de Agua Ahorrados
