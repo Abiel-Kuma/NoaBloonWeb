@@ -38,7 +38,7 @@ const Navbar = () => {
                 <Leaf className="text-white h-6 w-6" />
               </div>
               <span className="ml-2 text-xl font-bold text-noabloon-deep-green-800">
-                NoaBloon
+                NoaBloom
               </span>
             </Link>
           </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
                   className="border-noabloon-grayish-blue-300 text-noabloon-grayish-blue-700 hover:bg-noabloon-light-green-50"
                 >
                   <User className="h-4 w-4 mr-2" />
-                  Account
+                  Cuenta
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
@@ -143,7 +143,7 @@ const Navbar = () => {
                     className="relative hover:bg-noabloon-light-green-50"
                   >
                     <ShoppingCart className="h-5 w-5 mr-2 text-noabloon-grayish-blue-700" />
-                    Cart
+                    Carrito
                     {cartState.totalItems > 0 && (
                       <Badge className="ml-2 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs bg-noabloon-deep-green text-white">
                         {cartState.totalItems}

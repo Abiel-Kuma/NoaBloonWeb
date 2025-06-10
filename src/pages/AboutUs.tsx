@@ -7,42 +7,42 @@ const teamMembers = [
     role: "CEO",
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F01960d167ecc4066a5dd27bebba984c8%2Ff125aa24fc054e9283dab859f81cc415",
-    bio: "15+ years in sustainable agriculture and vertical farming innovation",
+    bio: "15+ años en agricultura sostenible e innovación en agricultura vertical",
   },
   {
     name: "Erick Méndez",
-    role: "Systems Designer",
+    role: "Diseñador de Sistemas",
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F01960d167ecc4066a5dd27bebba984c8%2Fbbcadb0c3ff74c82b98de8dafd221898",
-    bio: "Expert in hydroponic systems and automated growing technology",
+    bio: "Experto en sistemas hidropónicos y tecnología de cultivo automatizado",
   },
   {
     name: "Hugo Rodríguez",
-    role: "Head of Research",
+    role: "Jefe de Investigación",
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F01960d167ecc4066a5dd27bebba984c8%2F85ff0057e8f243d99054a46b3ba3d7ae",
-    bio: "Plant scientist specializing in urban agriculture and crop optimization",
+    bio: "Científico de plantas especializado en agricultura urbana y optimización de cultivos",
   },
   {
     name: "Ricardo Arias",
-    role: "Critico del team",
+    role: "Crítico del team",
     image:
       "https://cdn.builder.io/api/v1/image/assets%2F01960d167ecc4066a5dd27bebba984c8%2F3fdf14d03d3a45efbb9acb1dcfe4659c",
-    bio: "Supply chain expert ensuring sustainable and efficient operations",
+    bio: "Experto en cadena de suministro asegurando operaciones sostenibles y eficientes",
   },
   {
     name: "César Flores",
-    role: "La maquina de chambear",
+    role: "La máquina de chambear",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face",
-    bio: "Passionate about helping customers achieve their growing goals",
+    bio: "Apasionado por ayudar a los clientes a alcanzar sus objetivos de cultivo",
   },
 ];
 
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-noabloon-light-green-50 to-noabloon-grayish-blue-50">
-      {/* Hero Section */}
+      {/* Sección Hero */}
       <section className="bg-gradient-to-r from-noabloon-deep-green to-noabloon-grayish-blue text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -50,22 +50,22 @@ const AboutUs = () => {
               <Leaf className="h-16 w-16 text-noabloon-light-green-200" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Growing Tomorrow's Food Today
+              Cultivando la Comida del Mañana Hoy
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Revolutionizing urban agriculture through innovative vertical
-              farming solutions
+              Revolucionando la agricultura urbana a través de soluciones
+              innovadoras de agricultura vertical
             </p>
           </div>
         </div>
       </section>
 
-      {/* Company Description */}
+      {/* Descripción de la Empresa */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-noabloon-deep-green-800 mb-8">
-              Quienes somos
+              Quienes Somos
             </h2>
             <p className="text-lg text-noabloon-grayish-blue-700 leading-relaxed mb-8">
               NoaBloom es una empresa de agricultura vertical que busca
@@ -82,11 +82,11 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* Misión y Visión */}
       <section className="py-16 bg-gradient-to-r from-noabloon-light-green-100 to-noabloon-grayish-blue-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Mission */}
+            {/* Misión */}
             <div className="bg-white rounded-lg shadow-lg p-8 border border-noabloon-light-green-200">
               <div className="w-16 h-16 bg-noabloon-deep-green-100 rounded-full flex items-center justify-center mb-6">
                 <TrendingUp className="w-8 h-8 text-noabloon-deep-green" />
@@ -101,7 +101,7 @@ const AboutUs = () => {
               </p>
             </div>
 
-            {/* Vision */}
+            {/* Visión */}
             <div className="bg-white rounded-lg shadow-lg p-8 border border-noabloon-light-green-200">
               <div className="w-16 h-16 bg-noabloon-light-green-100 rounded-full flex items-center justify-center mb-6">
                 <Globe className="w-8 h-8 text-noabloon-light-green-600" />
@@ -120,16 +120,16 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Sección del Equipo */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-noabloon-deep-green-800 mb-4">
-              Meet Our Growing Team
+              Conoce a Nuestro Equipo en Crecimiento
             </h2>
             <p className="text-lg text-noabloon-grayish-blue-700 max-w-2xl mx-auto">
-              The passionate innovators cultivating the future of sustainable
-              agriculture
+              Los innovadores apasionados que cultivan el futuro de la
+              agricultura sostenible
             </p>
           </div>
 
@@ -159,15 +159,16 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* Sección de Valores */}
       <section className="py-16 bg-gradient-to-r from-noabloon-light-green-100 to-noabloon-grayish-blue-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-noabloon-deep-green-800 mb-4">
-              Our Core Values
+              Nuestros Valores Fundamentales
             </h2>
             <p className="text-lg text-noabloon-grayish-blue-700">
-              The principles that guide our mission to transform agriculture
+              Los principios que guían nuestra misión de transformar la
+              agricultura
             </p>
           </div>
 
@@ -177,11 +178,11 @@ const AboutUs = () => {
                 <Leaf className="w-8 h-8 text-noabloon-deep-green" />
               </div>
               <h3 className="text-xl font-semibold text-noabloon-deep-green-800 mb-2">
-                Sustainability First
+                Sostenibilidad Primero
               </h3>
               <p className="text-noabloon-grayish-blue-700">
-                Every decision we make prioritizes environmental stewardship and
-                resource conservation
+                Cada decisión que tomamos prioriza la gestión ambiental y la
+                conservación de recursos
               </p>
             </div>
 
@@ -190,11 +191,11 @@ const AboutUs = () => {
                 <Users className="w-8 h-8 text-noabloon-grayish-blue-600" />
               </div>
               <h3 className="text-xl font-semibold text-noabloon-deep-green-800 mb-2">
-                Community Impact
+                Impacto Comunitario
               </h3>
               <p className="text-noabloon-grayish-blue-700">
-                We build solutions that strengthen local food systems and
-                empower communities
+                Construimos soluciones que fortalecen los sistemas alimentarios
+                locales y empoderan a las comunidades
               </p>
             </div>
 
@@ -203,26 +204,26 @@ const AboutUs = () => {
                 <Heart className="w-8 h-8 text-noabloon-deep-green" />
               </div>
               <h3 className="text-xl font-semibold text-noabloon-deep-green-800 mb-2">
-                Passionate Innovation
+                Innovación Apasionada
               </h3>
               <p className="text-noabloon-grayish-blue-700">
-                We continuously innovate with passion and purpose to advance
-                agricultural technology
+                Innovamos continuamente con pasión y propósito para avanzar en
+                la tecnología agrícola
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Impact Section */}
+      {/* Sección de Impacto */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-noabloon-deep-green-800 mb-4">
-              Our Growing Impact
+              Nuestro Impacto en Crecimiento
             </h2>
             <p className="text-lg text-noabloon-grayish-blue-700">
-              Together, we're cultivating a more sustainable future
+              Juntos, estamos cultivando un futuro más sostenible
             </p>
           </div>
 
@@ -232,21 +233,23 @@ const AboutUs = () => {
                 1,200+
               </div>
               <div className="text-noabloon-grayish-blue-700">
-                Farms Installed
+                Granjas Instaladas
               </div>
             </div>
             <div className="bg-gradient-to-br from-noabloon-grayish-blue-100 to-noabloon-grayish-blue-200 rounded-lg p-8">
               <div className="text-4xl font-bold text-noabloon-deep-green-800 mb-2">
                 5M+
               </div>
-              <div className="text-noabloon-grayish-blue-700">Plants Grown</div>
+              <div className="text-noabloon-grayish-blue-700">
+                Plantas Cultivadas
+              </div>
             </div>
             <div className="bg-gradient-to-br from-noabloon-deep-green-100 to-noabloon-deep-green-200 rounded-lg p-8">
               <div className="text-4xl font-bold text-noabloon-deep-green-800 mb-2">
                 2.5M
               </div>
               <div className="text-noabloon-grayish-blue-700">
-                Gallons Water Saved
+                Galones de Agua Ahorrados
               </div>
             </div>
             <div className="bg-gradient-to-br from-noabloon-light-green-100 to-noabloon-grayish-blue-100 rounded-lg p-8">
@@ -254,7 +257,7 @@ const AboutUs = () => {
                 95%
               </div>
               <div className="text-noabloon-grayish-blue-700">
-                Pesticide Reduction
+                Reducción de Pesticidas
               </div>
             </div>
           </div>
